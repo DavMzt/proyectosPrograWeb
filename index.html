@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL DASHA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Hotel.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href = "images/logo.png" type = "image/png"><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+     <!-- header -->
+     <header class = "header" id = "header">
+        <div class = "head-top">
+            <div class = "site-name">
+                <span>DAVID MEZA, SHARON MICHELLE</span>
+            </div>
+            <div class = "site-nav">
+                <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class = "head-bottom flex">
+            <h2>UN LINDO LUGAR PARA RELAJARSE Y DISFRUTAR DE LA VIDA</h2>
+            <p>En el hotel DaSha disfruta de comodidades, un ambiente familiar o si estas en un viaje de amigos, el hotel DaSha es tu eleccion</p>
+            <button type = "button" class = "head-btn">Reserva YA</button>
+        </div>
+    </header><div class = "sidenav" id = "sidenav">
+        <span class = "cancel-btn" id = "cancel-btn">
+            <i class = "fas fa-times"></i>
+        </span>
+
+        <ul class = "navbar">
+            <li><a href = "#header">Inicio</a></li>
+            <li><a href = "#services">servicios</a></li>
+            <li><a href = "#rooms">Cuartos</a></li>
+            <li><a href = "#customers">Clientes</a></li>
+        </ul>
+        <button class = "btn sign-up">Registrate</button>
+        <button class = "btn log-in">Inicio de sesion</button>
+    </div>
+
+    <div id = "modal"></div>
+
+    <section class = "services sec-width" id = "services">
+        <div class = "title">
+            <h2>Servicios</h2>
+        </div>
+        <div class = "services-container">
+            <!-- single service -->
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class = "fas fa-utensils"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2>Comidas y desayunos</h2>
+                    <p>Contamos con los mejores servicios de comidas y desayunos, ya sea servida a tu habitacion o disfruta nuestro buffet tematico de la semana</p>
+                    <button type = "button" class = "btn">Ver mas</button>
+                </div>
+            </article>    
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class = "fas fa-swimming-pool"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2>Relajate</h2>
+                    <p>Nuestro hotel tambien es un lugar perfecto para disfrutar el momento y relajarse, contamos con piscinas tranquilas asi como relajantes baños en yakusis</p>
+                    <button type = "button" class = "btn">Ver mas</button>
+                </div>
+            </article>
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class = "fas fa-broom"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2>Limpieza y servicios</h2>
+                    <p>Ofrecemos ademas un servicio continuo a la habitacion, ya sea desde limpieza, comidas, atencion, entre varias mas</p>
+                    <button type = "button" class = "btn">Ver mas</button>
+                </div>
+            </article>
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class = "fas fa-door-closed"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2>Seguridad</h2>
+                    <p>Con nuestros sistemas de seguridad para tu habitacion, puedes permaneces tranquilo en tu calida estadia en nuestro hotel</p>
+                    <button type = "button" class = "btn">Ver mas</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class = "book">
+        <form class = "book-form">
+            <div class = "form-item">
+                <label for = "checkin-date">Dia de llegada: </label>
+                <input type = "date" id = "chekin-date">
+            </div>
+            <div class = "form-item">
+                <label for = "checkout-date">Dia de salida: </label>
+                <input type = "date" id = "chekout-date">
+            </div>
+            <div class = "form-item">
+                <label for = "adult">Adultos: </label>
+                <input type = "number" min = "1" value = "1" id = "adult">
+            </div>
+            <div class = "form-item">
+                <label for = "children">Niño: </label>
+                <input type = "number" min = "1" value = "1" id = "children">
+            </div>
+            <div class = "form-item">
+                <label for = "rooms">habitacion: </label>
+                <input type = "number" min = "1" value = "1" id = "rooms">
+            </div>
+            <div class = "form-item">
+                <input type = "submit" class = "btn" value = "¡REGISTRATE AHORA!">
+            </div>
+        </form>
+    </div>
+
+    <section class = "rooms sec-width" id = "rooms">
+        <div class = "title">
+            <h2>habitacion</h2>
+        </div>
+        <div class = "rooms-container">
+            <!-- single room -->
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "images/ind.jpeg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Cuarto individual</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Cuarto con una cama individual y ambiente comodo
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Opcion perfecta y economica para una sola persona
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Cuenta con todos los servicios basicos
+                        </li>
+                    </ul>
+                    <p>Con esta opcion sencilla y economica, disfruta de una abitación cuidadosamente diseñada para satisfacer todas tus necesidades durante tu viaje. Con una decoración moderna y minimalista, cada detalle ha sido pensado para garantizar tu máxima comodidad</p>
+                    <p>Al entrar, serás recibido por un ambiente acogedor y luminoso que te invitará a descansar después de un día vacacinando. Nuestra cama cómoda y lujosa te brindará el descanso que te mereces</p>
+                    <p class = "rate">
+                        <span>$550.00 Mx /</span> por noche
+                    </p>
+                    <button type = "button" class = "btn">Reserva ya!</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "images/cuartH2.jpeg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Cuarto Familiar</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Cuenta con un espacio amplio para acojer hasta 4 personas.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            4 camas completas con todos los servicios ademas de nuestro servicio de desayuno gratis.
+                        </li>
+                      <!--  <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            .
+                        </li> -->
+
+                    </ul>
+                    <p>Diseñada pensando en las necesidades de las familias, nuestra habitación familiar ofrece un amplio espacio para que todos se relajen y disfruten al máximo. Con una decoración cálida y acogedora, te sentirás como en casa desde el momento en que pongas un pie en la habitación.</p>
+                    <p>Ya sea que estén planeando unas vacaciones familiares o un fin de semana de escapada, nuestra habitación familiar es el lugar perfecto para crear recuerdos duraderos con tus seres queridos. </p>
+                    <p class = "rate">
+                        <span>$1000.00 MX /</span> Por noche
+                    </p>
+                    <button type = "button" class = "btn">Reserva ya!</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "images/CuartH3.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Cuarto de Lujo</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            El cuarto mas comodo y lujoso donde tendras un descanso maravilloso.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Todos los servicios extra sin costo alguno.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Comoda, perfecta y exquisita habitacion 
+                        </li>
+                    </ul>
+                    <p>Nuestra habitacion Cuenta con una cama king-size con sábanas de alta calidad y almohadas mullidas para garantizar un descanso de ensueño.</p>
+                    <p>Nuestra habitacion es el lugar perfecto para disfrutar con tu pareja ese dia especial, o esas vacaciones esperadas!!!</p>
+                    <p class = "rate">
+                        <span>$2000.00 mx /</span> Por noche
+                    </p>
+                    <button type = "button" class = "btn">Reserva ya!</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "images/suiteRes.jpeg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Suite Residencial</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            La suite donde podras tener tu propa alberca, entre otras cosas.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Servicios basicos sin costo.
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Vista hermosa de nuestras terrazas.
+                        </li>
+                    </ul>
+                    <p>Nuestra habitacion/tipo casa mas acogedora. Cuenta con una cama king-size con sábanas de alta calidad y almohadas mullidas para garantizar un descanso de ensueño. Además, podrás relajarte en nuestro lujoso baño equipado con una bañera de hidromasaje o una ducha de lluvia, donde podrás disfrutar de un momento de puro placer y relajación.</p>
+                    <p>Ya sea que estés celebrando una ocasión especial o simplemente buscando una experiencia de alojamiento inigualable, nuestra suite es el lugar perfecto para disfrutar de un nivel superior de confort  </p>
+                    <p class = "rate">
+                        <span>$4000.00 mx /</span> Por noche
+                    </p>
+                    <button type = "button" class = "btn">Reserva ya!</button>
+                </div>
+            </article>
+            
+            </div>
+                </section>
+    
+                <section class = "customers" id = "customers">
+                    <div class = "sec-width">
+                        <div class = "title">
+                            <h2>Conoce a nuestros clientes!</h2>
+                        </div>
+                        <div class = "customers-container">
+                            <!-- single customer -->
+                            <div class = "customer">
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>Lo mejor</h3>
+                                <p>Simplemente un hotel sencillo, lindo, hermoso que tiene mucho mas de lo que se ve a simple vista</p>
+                                <img src = "images/AlbPriv4.jpg" alt = "customer image">
+                                <span>Cristian, Peru</span>
+                            </div>
+                            <!-- end of single customer -->
+                            <!-- single customer -->
+                            <div class = "customer">
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>Comodo</h3>
+                                <p>Quede encantada, mi familia lo amo!!!!, la comida es rica y vaya que siendo el hotel uno no queria salir de ahi</p>
+                                <img src = "images/fam_1.webp" alt = "customer image">
+                                <span>Jessica, mexico</span>
+                            </div>
+                            <!-- end of single customer -->
+                            <!-- single customer -->
+                            <div class = "customer">
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>Nice Place</h3>
+                                <p>To be honest, visiting mexico for the first time was one of the craziest things me and my family have ever done,</p>
+                                <p>and after a long day this hotel was perfect to take a rest, i was right in following my friends recomendation, 10/10</p>
+                                <img src = "images/fam_2.jpeg" alt = "customer image">
+                                <span>Kyle, U.S.A</span>
+                            </div>
+                            <!-- end of single customer -->
+                            <!-- single customer -->
+                            <div class = "customer">
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                                <h3>Agusto y conforme, en parte</h3>
+                                <p>En mi caso con la habitacion lujosa quede un poco satisfecho, aun que de repente si habia un poco de mala señal, pero fuera de ahi todo muy bien. </p>
+                                <p> Creo que esta muy bien si lo que deseas es pasar un rato como para despejarte o cosas asi. EXCELENTE!!!!</p>
+                                <img src = "images/comVic.png" alt = "customer image">
+                                <span>Victor, Torreón</span>
+                            </div>
+                            <!-- end of single customer -->
+                        </div>
+                    </div>
+                </section>
+                <!-- end of body content -->
+                
+            </article>
+            <!-- end of single room -->
+    </div>
+
+
+    <!-- footer -->
+    <footer class = "footer">
+        <div class = "footer-container">
+            <div>
+                <h2>Acerca de... </h2>
+                <p>Cualquier duda, pregunta o queja, revisar los links adjuntos</p>
+                <ul class = "social-icons">
+                    <li class = "flex">
+                        <i class = "fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class = "flex">
+                        <i class = "fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class = "flex">
+                        <i class = "fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Tambien te podria interesar</h2>
+                <a href = "#">Blog</a>
+                <a href = "#">habitaciones</a>
+                <a href = "#">Promociones</a>
+                <a href = "#">Cupones</a>
+            </div>
+
+            <div>
+                <h2>Privacidad</h2>
+                <a href = "#">Nuestra trayectoria</a>
+                <a href = "#">Acerca de nosotros</a>
+                <a href = "#">Contactanos</a>
+                <a href = "#">Servicios adicionales</a>
+            </div>
+
+            <div>
+                <h2>Preguntas frecuentes</h2>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        Calle politico-Honesto, #2930 Torreon coahuila
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +52 87192084
+                        
+                    </span>
+                   <div>
+                    
+                   </div> 
+                    <span>
+                     +52 8711615440
+
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span>
+                      Davsha@Gmail.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
